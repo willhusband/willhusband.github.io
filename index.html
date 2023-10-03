@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Will Husband | AI & Data Science</title>
+</head>
+
+<body>
+
+    
+
+    <header>
+        <div class="container">
+            <span id="contact-btn">Contact Me</span>
+            <h1>Will Husband</h1>
+            <p>An AI and Data Science student based in Manchester. I recently finished developing my own financial market analysis tools with help from the Greater Manchester AI Foundry. I am eager to apply my skills in the real world with an internship.</p>
+        </div>
+    </header>
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>K-Nearest Neighbours algorithm</h3>
+                <p>Built on Processing using Java. This is a simple version of the K-Nearest Neighbours algorithm built from scratch. The code is reuseable, allowing the user to change the value of K, or the data set with little intervention. I built this for my final project in my second year of study, and recieved a mark of 83/100 for it.</p>
+                <div class="project-images">
+                    <!-- Image 1 -->
+                    <!-- Image 1 -->
+                    <img src="online portfolio screenshots\knnvis.PNG" alt="Project 1 Screenshot 1">
+                    
+                    <!-- Image 2 -->
+                    <img class="matching-image" src="online portfolio screenshots\knn2.PNG" alt="Project 1 Screenshot 2">
+
+                </div>
+                <a href="https://github.com/willhusband/KNN-Java" target="_blank">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <h3>News Article Analyzer for Stocks</h3>
+                <p>This project is coded in Python and utilises streamlit.  The app performs NLP (Natural Language Processing) analysis on the selected stock based on the latest news articles. It utilizes Google News and the VADER sentiment analysis tool to extract and analyze news sentiment. The app displays a dataframe of news articles, sentiment analysis results, and a pie chart illustrating the sentiment distribution (BUY, THINK, SELL). Additionally, it generates a word cloud visualization for the stock's news summaries. Users can input the company name to retrieve and analyze relevant news. It was created with assistance from the Greater Manchester AI Foundry (GMAI Foundry).</p>
+                <div class="project-images">
+                    <!-- Image 1 -->
+                    <img src="online portfolio screenshots\wordcloud 1.PNG" alt="Project 2 Screenshot 1">
+
+                    <!-- Image 2 -->
+                    <img src="online portfolio screenshots\wordcloud 2.PNG" alt="Project 2 Screenshot 2">
+                </div>
+                <a href="https://github.com/willhusband/AI_Stock_Forecaster_App_NLP_Analysis" target="_blank">GitHub Repository</a>
+            </div>
+
+            <div class="project">
+                <h3>Time Series Forecasting for Stocks</h3>
+                <p>Also created with assistance from the GMAI Foundry, this Python code creates an interactive AI Stock Forecaster app using Streamlit. The app allows users to select a stock from a predefined list, analyzes its historical data, and uses the Prophet library for time series forecasting. The forecasted data, including predicted values and confidence intervals, is presented through interactive Plotly charts. The app also displays raw data, forecasted components. Unfortunately, I have not been maintaining this code, so it no longer loads properly.</p>
+                <div class="project-images">                   
+                </div>
+                <a href="https://github.com/willhusband/AI_Stock_Forecaster_App_Historical_Analysis" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <ul>
+            <li>Email: <a href="will.husband@icloud.com">will.husband@icloud.com</a></li>            
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/will-husband-841580221/" target="_blank">Will Husband</a></li>
+            <li>GitHub: <a href="https://github.com/willhusband?tab=repositories" target="_blank">willhusband</a></li>
+        </ul>
+    </footer>
+    
+    
+    
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            document.querySelector('footer').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+
+</html>
+
