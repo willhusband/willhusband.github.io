@@ -65,11 +65,13 @@ header {
 }
 
 .project {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .project-images img {
     width: 500px; /* Adjust based on preference */
+    padding: 20px;
     margin-left: 20px;
 }
 
