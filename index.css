@@ -20,12 +20,7 @@ header, .section {
     margin-bottom: 20px;
 }
 
-.project-images-left img {
-    width: 500px; /* Adjust based on preference */
-    margin-right: 10px;
-}
-
-.project-images-right img {
+.project-images img {
     width: 500px; /* Adjust based on preference */
     margin-left: 10px;
 }
