@@ -13,11 +13,11 @@ body, html {
 }
 
 header, .section {
-    padding: 60px;
+    padding: 30px;
 }
 
 .project {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .project-images img {
