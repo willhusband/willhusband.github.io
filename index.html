@@ -1,86 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <title>Will Husband | AI & Data Science</title>
 </head>
-
 <body>
-
-    
-
     <header>
-        <div class="container">
-            <span id="contact-btn">Contact Me</span>
-            <h1>Will Husband</h1>
-            <p>An AI and Data Science student based in Manchester. I am now in my final year of study, I am very excited to contribute to the exciting, growing field of AI.</p>
+        <div class="top-bar">
+            <h1>Your Name</h1>
+            <button onclick="scrollToContact()">Contact Me</button>
         </div>
+        <p>A short bio about yourself, your skills, and what you do.</p>
     </header>
-    
-
 
     <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-
+        <!-- Repeat this part for each section -->
+        <div class="section">
+            <h2>Section Title</h2>
+            <!-- Repeat this part for each project -->
             <div class="project">
-                <h3>A K-Nearest Neighbours algorithm to classify the diagnosis of breast tumours.</h3>
-                <p>Currently, the medical applications of AI often receive less attention than a lot of other fields. However, the ability, and potential, of AI in regards to medicine is immense. For example, this K-Nearest Neighbours algorithm has the ability to accurately classify breast tumours as benign or malignant. The algorithm shuffles and splits a dataset of over 500 lines and 30 attributes and plots the training data in a 30 dimensional feature space. The data can be visualised according to 2 of those dimensions as shown in the screenshots below. Then, with each of the unclassified examples, the algorithm looks at the nearest classified data points in the feature space and determines the unknown data point as benign or malignant based on probability. It produces an average accuracy of around 96%. Overall, this is quite a simple algorithm. However, what it says about the potential of AI in medicine is very exciting. This project was part of the Machine Learning Module at the end of my second year, which was worth most of my final grade for that year. I recieved a mark of 81/100 for this module. Part of that mark was also determined by a comprehensive essay about the benefits of using a Convolutional Neural Network or a Bag of Visual Words algorithm to classify images that users had uploaded on an online marketplace.</p>
+                <h3>Project Title</h3>
+                <p>Project Description</p>
                 <div class="project-images">
-                    <!--<img src="online portfolio screenshots\visual2.PNG" alt="Project 1 Screenshot 1">-->
-                    <img class="matching-image" src="online portfolio screenshots\visual3.PNG" alt="Project 1 Screenshot 2">
-                    <img src="online portfolio screenshots\visual4.PNG" alt="Project 1 Screenshot 1">
-
+                    <img src="online portfolio screenshots/dataset.PNG" alt="Project Image 1">
+                    <img src="online portfolio screenshots/knn3.PNG" alt="Project Image 2">
                 </div>
-                <a href="https://github.com/willhusband/KNN-Java" target="_blank">GitHub Repository</a>
+                <a href="https://github.com/yourgithub" target="_blank">GitHub Repository</a>
             </div>
-
-            <div class="project">
-                <h3>News Article Analyzer and Time Series Forecasting for Stocks</h3>
-                <p>Using AI to assist decisions in financial markets has the prospect of being very lucrative. I have created two apps which aim to explore some of the potential of AI in financial markets. The first of the two is for scanning news articles. News articles can be a useful tool in financial markets as they can show the general sentiment of the market, whether people are buying or selling. However, it is hard as a human to trawl through many news articles in a short space of time. This app scans the internet for news articles related to any inputted stock, determines the sentiment of these news articles using natural language processing, then creates visual tools to help the user determine what they should do. For example, a pie chart which says whether people are buying the stock, selling it, or consolidating (THINK), or a word cloud visualisation (images below are both for this app). The other app utilises time series forecasting. It allows the user to input the name of a stock, then, using historical data, it predicts where the stock’s price will be at a given time. Unfortunately, I have not maintained this code as the website I used to build the apps will not let me have more than one active app, hence the lack of screenshots. Both apps were made with assistance from the  <a href="https://gmaifoundry.ac.uk/about/" target="_blank" style="text-decoration: underline; color: #0000EE;">Greater Manchester AI Foundry</a> (GMAI Foundry).</p>
-                <div class="project-images">
-                    <!-- Image 1 -->
-                    <img src="online portfolio screenshots\wordcloud 1.PNG" alt="Project 2 Screenshot 1">
-
-                    <!-- Image 2 -->
-                    <img src="online portfolio screenshots\wordcloud 2.PNG" alt="Project 2 Screenshot 2">
-                </div>
-                <a href="https://github.com/willhusband/AI_Stock_Forecaster_App_NLP_Analysis" target="_blank">GitHub Repository</a>
-            </div>
-
-            <div class="project">
-                <h3>What I am currently working on</h3>
-                <p>I am currently in my final year of study at Manchester Metropolitan University. The projects I am working on are:</p>
-                <p>     - Data Governance and Management - Create, implement and justify a data mart to enable data mining for a movie theatre company using Oracle SQL.</p>
-                <p>     - Deep Learning - Implementing 2 or more deep learning algorithms, like CNNs, on an image classification task. I have chosen to classify images of 'Erythema Migrans Rashes', a common symptom of Lyme Disease.</p>
-                <div class="project-images">                   
-                </div>
-                <!--<a href="https://github.com/willhusband/AI_Stock_Forecaster_App_Historical_Analysis" target="_blank">GitHub Repository</a>-->
-            </div>
+            <!-- End of a project -->
         </div>
+        <!-- End of a section -->
     </section>
-    
-    
-    <footer>
-        <ul>
-            <li>Email: <a href="will.husband@icloud.com">will.husband@icloud.com</a></li>            
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/will-husband-841580221/" target="_blank">Will Husband</a></li>
-            <li>GitHub: <a href="https://github.com/willhusband?tab=repositories" target="_blank">willhusband</a></li>
-        </ul>
-    </footer>
-    
-    
-    
-    <script>
-        document.getElementById('contact-btn').addEventListener('click', function() {
-            document.querySelector('footer').scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-        });
-    </script>
-</body>
 
+    <footer id="contact">
+        <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+        <a href="mailto:youremail@example.com">Email</a>
+        <a href="https://github.com/yourgithub">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
