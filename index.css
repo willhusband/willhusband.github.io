@@ -13,16 +13,16 @@ body, html {
 }
 
 header, .section {
-    padding: 20px;
+    padding: 60px;
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .project-images img {
     width: 500px; /* Adjust based on preference */
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 footer {
