@@ -76,11 +76,9 @@ header {
 }
 
 .project-images img {
-    width: 100%; /* Make images responsive */
-    max-width: 500px; /* Ensure images do not exceed the max width */
+    width: 500px; /* Adjust based on preference */
     padding: 20px;
-    margin: 20px auto; /* Center images within the container */
-    display: block;
+    margin-left: 20px;
 }
 
 footer {
