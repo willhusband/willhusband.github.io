@@ -61,18 +61,24 @@ header {
 }*/
 
 .section {
-    padding: 30px;
+    max-width: 1000px; /* Set the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px;
 }
 
 .project {
     margin-top: 30px;
     margin-bottom: 30px;
+    max-width: 1000px; /* Ensure these sections respect the max width */
+    margin: 0 auto; /* Center align these sections */
 }
 
 .project-images img {
-    width: 500px; /* Adjust based on preference */
+    width: 100%; /* Make images responsive */
+    max-width: 500px; /* Ensure images do not exceed the max width */
     padding: 20px;
-    margin-left: 20px;
+    margin: 20px auto; /* Center images within the container */
+    display: block;
 }
 
 footer {
