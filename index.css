@@ -56,9 +56,9 @@ header {
     margin: 0;
 }
 
-/*header, .section {
-    padding: 30px;
-}*/
+header {
+    padding: 50px;
+}
 
 .section {
     padding: 30px;
