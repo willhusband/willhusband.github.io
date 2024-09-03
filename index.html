@@ -42,7 +42,7 @@
             <!-- Repeat this part for each project -->
             <div class="project">
                 <h3>Researching the effect of generative and simple data augmentation methods for skin lesion datasets</h3>
-                <h4>Data augmentation, Generative AI, Deep learning, Python</h4>  
+                <h4>    Data augmentation, Generative AI, Deep learning, Python</h4>  
                 <p>The ability to effectively analyse skin lesions opens the door for earlier diagnoses, which leads to better treatment and lower mortality. Deep learning models present a promising avenue toward achieving this critical objective, yet the effectiveness of these models heavily hinges on the presence and quality of datasets.
                   <br><br>The ability to effectively analyse skin lesions opens the door for earlier diagnoses, which leads to better treatment and lower mortality. Deep learning models present a promising avenue toward achieving this critical objective, yet the effectiveness of these models heavily hinges on the presence and quality of datasets.
                   <br><br>
@@ -59,19 +59,53 @@
             </div>
             <div class="project">
               <h3>GPU Optimisation for Molecular Dynamics</h3>
-              <h4>Microsoft Azure, GPU core optimisation, Linux</h4>  
+              <h4>    Microsoft Azure, GPU core optimisation, Linux</h4>  
               <p>In this project I was given 3 versions of a “.c” file that simulate molecular dynamics; the serial version of the code, an initial attempt at parallelisation of the code using OpenMP, and an initial attempt at parallelisation using MPI. The aim of the task was to optimise the individual executables, while ensuring the output stays correct. To compile and run code I was using Microsoft Azure. The approach I took to optimise the files was to initially apply different levels of “-O” optimisations provided by Intel. These all produced impressive results without impacting the accuracy of the output. <br><br>
                 On top of this, I updated the OpenMP code through Nano. The original OpenMP code calculated certain values in a shared array; I updated this so that local variables are used and incremented with each thread in order to reduce overhead. I did this using a “reduction” pragma statement, which improved the performance of the code when running across any number of GPU cores. This code was compiled several times using different levels of Intel’s “-O” optimisations.<br><br>                
                 The graph on the right shows the compile times of the original OpenMP code when compiled with different levels of “-O” optimisation on different numbers of cores. The graph on the right shows how much faster the updated OpenMP code runs with different levels of “-O” optimisation compared to the original OpenMP code.
-                </p>
+                <br><br></p>
+                <!--<div class="project-images">
+                  <img src="online portfolio screenshots/dataaugsimple.png" alt="Project Image 1">
+                  <img src="online portfolio screenshots/GANs.png" alt="Project Image 2">
+              </div> -->
+            </div>
+            <!-- End of a project -->
+
+            <div class="project">
+              <h3>Using Apache Spark to analyse Transport Data</h3>
+              <h4>    Apache Spark, Big Data, Python</h4>  
+              <p>In this project, I aimed to test the research hypothesis: "Rides in 2014 starting from Aston Street, Stepney station were shorter compared to other stations." To analyse this, I used Apache Spark to process and clean a large dataset from Transport for London comprising multiple `.csv` files. These files were combined into a single data frame, which was then filtered to include only rides from 2014. Key columns such as "Start date," "StartStation name," and "Duration" were prepared for analysis by converting strings into appropriate data types and extracting relevant information.
+                <br><br>
+                The data was further divided by month to allow for a more granular analysis. For each month, I calculated metrics such as the mean journey duration from Aston Street and compared it to the mean journey duration from other stations. This comparison was carried out using t-tests from the SciPy package to determine whether the differences were statistically significant.
+                <br><br>
+                Finally, I aggregated the results across all months to determine the overall significance, leading to a conclusion about the initial hypothesis. The analysis showed that the hypothesis was false, as rides from Aston Street were not significantly shorter than those from other stations.
+                <br><br></p>
                 <!--<div class="project-images">
                   <img src="online portfolio screenshots/dataaugsimple.png" alt="Project Image 1">
                   <img src="online portfolio screenshots/GANs.png" alt="Project Image 2">
               </div> -->
           </div>
             <!-- End of a project -->
+
+            <div class="project">
+              <h3>Developing a Cross-Platform Memory Testing Game with .NET MAUI</h3>
+              <h4>    Multi-platform mobile application, .NET MAUI, C#</h4>  
+              <p>In this project, I developed a memory testing game using .NET MAUI, a framework designed for creating cross-platform mobile applications. The primary goal was to create an engaging and interactive game that leveraged a wide range of mobile features while ensuring compatibility across multiple operating systems, including iOS, Android, and Google.
+                <br><br>
+                The game was designed to test and improve the user's memory through various levels of increasing difficulty. It integrated multiple mobile features, such as haptic feedback, vibration, and torch use, to create a dynamic user experience. Additionally, the game included comprehensive accessibility settings in compliance with government standards, ensuring it was usable by a diverse audience. These settings included adjustable text sizes and dark mode support making the app accessible to users with different needs.
+                <br><br>
+                Throughout the development process, the app was rigorously tested on multiple devices to ensure seamless functionality across different platforms. The result was a highly compatible and user-friendly mobile game that not only entertained but also adhered to high standards of accessibility.
+                <br><br></p>
+                <!--<div class="project-images">
+                  <img src="online portfolio screenshots/dataaugsimple.png" alt="Project Image 1">
+                  <img src="online portfolio screenshots/GANs.png" alt="Project Image 2">
+              </div> -->
+          </div>
+            <!-- End of a project -->
+
             <div class="project">
               <h3>Financial market analysis business</h3>
+              <h4>    Natural language processing, Financial data analysis, Python</h4>
               <p> Using AI to assist decisions in financial markets has the prospect of being very lucrative. I have created a web application which aims to explore some of the potential of utilising AI in financial markets. This was created outside of my studies, I created it as a business, which I aim to grow. I created the application with assistance from the Greater Manchester AI Foundry (GMAI Foundry).
                 <br><br>News articles can be a useful tool in financial markets as they can show the general sentiment of the market, whether people are buying or selling. However, it is hard to manually trawl through several news articles in a short space of time.                
                 <br><br>This app scans the internet for news articles related to any inputted stock, determines the sentiment of these news articles using natural language processing (NLP), then creates visual tools to help the user determine what they should do. For example, a pie chart which says whether people are buying the stock, selling it, or consolidating (THINK), or a word cloud visualisation.</p>
@@ -84,7 +118,7 @@
               
           </div>
         </div>
-        <div class="section">
+        <!-- <div class="section"> -->
           <!-- <h2>Previous Projects</h2> -->
 
           <div class="project">
