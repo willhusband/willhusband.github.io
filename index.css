@@ -21,6 +21,8 @@ header {
     background-color: #4285f4;
     color: #eeeeee;
     padding: 20px 0;
+    max-width: 1000px; /* Set the maximum width of the content */
+    margin: 0 auto;
     text-align: center;
     position: relative; /* Make the header a positioned container for absolute positioning */
 }
@@ -61,12 +63,16 @@ header {
 }*/
 
 .section {
-    padding: 30px;
+    max-width: 1000px; /* Set the maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px;
 }
 
 .project {
     margin-top: 30px;
     margin-bottom: 30px;
+    max-width: 1000px; /* Ensure these sections respect the max width */
+    margin: 0 auto; /* Center align these sections */
 }
 
 .project-images img {
