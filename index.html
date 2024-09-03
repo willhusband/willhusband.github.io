@@ -29,7 +29,7 @@
           <span id="contact-btn">Contact Me</span>
           <h1>Will Husband</h1>
           <h3>AI and Data Science</h3><br>
-          <h4>::I recently graduated with a First Class Honours in AI and Data Science BSc from Manchester Metropolitan University, where the course was highly practical and hands-on. I am passionate about applying data-driven solutions to real-world problems, and eager to contribute my skills in a dynamic and innovative environment. <h4></h4>
+          <h4>I recently graduated with a First Class Honours in AI and Data Science BSc from Manchester Metropolitan University, where the course was highly practical and hands-on. I am passionate about applying data-driven solutions to real-world problems, and eager to contribute my skills in a dynamic and innovative environment. <h4></h4>
       </div>
   </header>
         
@@ -57,6 +57,18 @@
                     <img src="online portfolio screenshots/GANs.png" alt="Project Image 2">
                 </div>
             </div>
+            <div class="project">
+              <h3>GPU Optimisation for Molecular Dynamics</h3>
+              <h4>Microsoft Azure, GPU core optimisation, Linux</h4>  
+              <p>In this project I was given 3 versions of a “.c” file that simulate molecular dynamics; the serial version of the code, an initial attempt at parallelisation of the code using OpenMP, and an initial attempt at parallelisation using MPI. The aim of the task was to optimise the individual executables, while ensuring the output stays correct. To compile and run code I was using Microsoft Azure. The approach I took to optimise the files was to initially apply different levels of “-O” optimisations provided by Intel. These all produced impressive results without impacting the accuracy of the output. <br><br>
+                On top of this, I updated the OpenMP code through Nano. The original OpenMP code calculated certain values in a shared array; I updated this so that local variables are used and incremented with each thread in order to reduce overhead. I did this using a “reduction” pragma statement, which improved the performance of the code when running across any number of GPU cores. This code was compiled several times using different levels of Intel’s “-O” optimisations.<br><br>                
+                The graph on the right shows the compile times of the original OpenMP code when compiled with different levels of “-O” optimisation on different numbers of cores. The graph on the right shows how much faster the updated OpenMP code runs with different levels of “-O” optimisation compared to the original OpenMP code.
+                </p>
+                <!--<div class="project-images">
+                  <img src="online portfolio screenshots/dataaugsimple.png" alt="Project Image 1">
+                  <img src="online portfolio screenshots/GANs.png" alt="Project Image 2">
+              </div> -->
+          </div>
             <!-- End of a project -->
             <div class="project">
               <h3>Financial market analysis business</h3>
@@ -73,7 +85,7 @@
           </div>
         </div>
         <div class="section">
-          <h2>Previous Projects</h2>
+          <!-- <h2>Previous Projects</h2> -->
 
           <div class="project">
             <h3>Building a KNN algorithm from scratch to classify tumours as benign or malignant</h3>
